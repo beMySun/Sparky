@@ -1,0 +1,96 @@
+@import '../../../../styles/color.less';
+
+.btn {
+	margin: 4px;
+  box-sizing: border-box;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: @lightPure;
+  border-radius: @border-radius;
+  transition: all .2s;
+  &:disabled {
+    opacity: .6;
+    cursor: not-allowed;
+  }
+}
+
+.btn-default {
+  padding: 0 20px;
+  height: 32px;
+  font-size: 14px;
+  line-height: 14px;
+  color: @grey2;
+  border: 1px solid @grey6;
+  border-radius: 16px;
+  &:hover {
+    border-color: @primary;
+    color: @primary;
+  }
+  &:disabled {
+    color: @grey2;
+    border: 1px solid @grey6;
+  }
+}
+
+/* size 相关 */
+.btn-large {
+  height: 48px;
+  font-size: 16px;
+  line-height: 46px;
+}
+
+.btn-small {
+  height: 24px;
+  font-size: 12px;
+  line-height: 22px;
+  &:disabled {
+    opacity: .6;
+  }
+}
+
+/* 种类相关 */
+.btn-primary {
+  background: @primary; border-color: @primary;
+  color: @lightPure;
+  &:hover {
+    background: @primary; border-color: @primary;
+    color: @lightPure;
+  }
+  &:disabled {
+    background: @primary; border-color: @primary;
+    color: @lightPure;
+  }
+}
+
+.btn-warn {
+  background: @warn;
+  border-color: @warn;
+  color: @lightPure;
+  &:disabled {
+    background: @warn;
+    border-color: @warn;
+    color: @lightPure;
+  }
+  &:hover {
+    background: @warn;
+    border-color: @warn;
+    color: @lightPure;
+  }
+}
+
+.btn-light {
+  &:disabled {
+    opacity: .6;
+  }
+}
+
+.btn-link {
+  &:disabled {
+    opacity: .6;
+  }
+}
+
+.icon-gap {
+  padding-right: 4px;
+}
